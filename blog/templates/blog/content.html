@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}blog article{% endblock %}
+
+{% block content %}
+<div class='row text-center vertical-middle-sm'>
+    <h1>{{ article.title }}</h1>
+</div>
+<div class='row'>
+    <div class='col-xs-12 col-md-8'>
+        <p class='text-center'><span>{{ article.author.username }}
+            </span><span style='margin-left:20px'>{{ publish }}</span>
+        </p>
+<div>{{ article.body }}</div>
+</div>
+    <div class='col-xs-6 col-md-4'>
+        <h2> ad </h2>
+        <p> slogan </p>
+        <img width='918px' src='https://www.3dmgame.com/uploads/allimg/160616/317-160616143428.jpg'>
+        </div>
+    </div>
+    {% endblock %}
