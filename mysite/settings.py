@@ -20,6 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = '4m9c8rk^%_6q^94zn+$w_tw!#rri2e8*@#as*zzmb1oo8)^^sx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
     'account'
 ]
 
@@ -121,4 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ( os.path.join(BASE_DIR,'static'),)
+
+LOGIN_REDIRECT_URL = '/blog/'
 
